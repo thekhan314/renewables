@@ -7,8 +7,8 @@ import datetime as dt
 import sqlite3
 import time 
 import os
-import dash_html_components as html
-from datashop import *
+
+#from datashop import *
 import datetime as dt
 
 import os
@@ -19,8 +19,7 @@ working_dir = str(Path(os.path.dirname(os.path.realpath(__file__))))
 #from common import working_dir
 #working_dir = str(working_dir) + '/'
 
-with open (working_dir + '/data/cache.json','r') as cache_file:
-    cache_dict = json.load(cache_file)
+
 
 with open (working_dir + '/data/api_keys.json','r') as cache_file:
     api_keys = json.load(cache_file)
