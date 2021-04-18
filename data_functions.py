@@ -117,9 +117,9 @@ class EIA_Series:
         self.frame.set_index(
             self.date_col,drop=True,inplace=True)        
         self.frame.sort_index(ascending=True,inplace=True)  
-        self.frame = self.frame.asfreq(freq='D').fillna(method='ffill')
+        #self.frame = self.frame.asfreq(freq='D').fillna(method='ffill')
 
-        self.frame['date_only'] = self.frame.index.astype('str').str.slice(stop=10)
+        #self.frame['date_only'] = self.frame.index.astype('str').str.slice(stop=10)
    
 
         #______   caputure data as series for convenience attribute
